@@ -1,0 +1,113 @@
+.contactForm {
+    position: relative;
+    background-color: #fff;
+    width: calc(90% - 300px);
+}
+
+.contactForm .formBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.contactForm .formBox .inputBox {
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+.contactForm .formBox .inputBox.w50 {
+    width: 47%;
+}
+.contactForm .formBox .inputBox.w100 {
+    width: 60%;
+}
+
+.contactForm .formBox .inputBox input,
+.contactForm .formBox .inputBox textarea {
+    width: 100% !important;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    resize: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+
+.contactForm .formBox .inputBox textarea {
+    min-height: 120px;
+}
+
+.contactForm .formBox .inputBox span {
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.contactForm .formBox .inputBox input:focus~span,
+.contactForm .formBox .inputBox textarea:focus~span,
+.contactForm .formBox .inputBox input:valid~span,
+.contactForm .formBox .inputBox textarea:valid~span {
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff0000;
+}
+
+.contactForm .formBox .inputBox input[type="submit"] {
+    position: relative;
+    cursor: pointer;
+    background: #0f3959;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+}
+
+.contactForm .formBox .inputBox input[type="submit"]:hover {
+    background-color: #ff0000;
+}
+@media (max-width:510px){
+    .contactForm {
+        position: relative;
+        width: calc(100% - 100px);
+        margin-left: 20px;
+    }
+    .contactForm .formBox .inputBox span {
+        position: absolute;
+        left: 0;
+        font-size: 10px;
+        font-weight: 200;
+        color: #333;
+        transition: 0.5s;
+        pointer-events: none;
+    }
+    
+    
+}
+@media (max-width:380px){
+    .contactForm {
+        position: relative;
+        width: calc(100% - 100px);
+        margin-left: 30px;
+    }
+    .contactForm .formBox .inputBox span {
+        position: absolute;
+        left: 0;
+        font-size: 10px;
+        font-weight: 200;
+        color: #333;
+        transition: 0.5s;
+        pointer-events: none;
+    }
+    
+    
+}
